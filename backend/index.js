@@ -9,6 +9,9 @@ app.use(express.json());
 app.use(cors({source:"https://crud1-nine.vercel.app/",credentials:true}))
 
 app.use("",userRoutes);
+app.get('/',(req,resp)=>{
+    return resp.json({message:"HELLO SHIVAM"})
+})
 
 
 dbConnect();
