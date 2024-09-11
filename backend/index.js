@@ -6,7 +6,7 @@ const userRoutes=require('./routes/User');
 
 const PORT=4000;
 app.use(express.json());
-app.use(cors({source:"http://localhost:3000",credentials:true}))
+app.use(cors({source:"https://crud1-nine.vercel.app/",credentials:true}))
 
 app.use("",userRoutes);
 
